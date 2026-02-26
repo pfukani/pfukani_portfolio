@@ -2,58 +2,263 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pfukani Mathebula | IT Graduate</title>
+    <title>Pfukani Mathebula | IT Graduate & BSc Honours IT Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Pfukani Mathebula, IT graduate and BSc Honours IT student specializing in full-stack and mobile development.">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <h1>Pfukani Mathebula</h1>
-    <p>IT Graduate | Aspiring Full-Stack Developer</p>
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="cv/Pfukani_Mathebula_CV.pdf" class="btn-outline">Download CV</a>
+<header class="hero">
+    <div class="hero-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <h1 class="logo">Pfukani<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+
+        <div class="hero-layout">
+            <div class="hero-text-content">
+                <p class="hero-tag">IT Graduate • BSc Honours IT Student • Full-Stack / Mobile Developer</p>
+
+                <h2>Building real-world apps for healthcare & finance.</h2>
+                <p class="hero-text">
+                    I design and build practical web and mobile applications — from managing
+                    hospital queues to loan systems for microlenders — using modern tools like
+                    Django REST, Flutter, and Android.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="cv/Pfukani_Mathebula_CV.pdf" class="btn outline" target="_blank">
+                        Download CV
+                    </a>
+                    <a href="cv/Transcript.pdf" class="btn outline" target="_blank">
+                        Download Transcript
+                    </a>
+                </div>
+            </div>
+
+            <!--PROFILE PICTURE -->
+            <div class="hero-photo">
+                <img src="images/profile.jpg" alt="Pfukani Mathebula">
+            </div>
+        </div>
+
+    </div>
 </header>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Java (Android)</li>
-        <li>Spring Boot</li>
-        <li>PHP & MySQL</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React</li>
-        <li>REST APIs</li>
-        <li>Git & GitHub</li>
-        <li>Firebase Cloud Messaging</li>
-        
-</section>
+<main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="section-content">
+            <p>
+                I am an IT graduate and current BSc Honours IT student with a strong passion 
+                for full-stack and mobile development. I enjoy building systems that make 
+                everyday processes smoother, especially in healthcare and financial services.
+            </p>
+            <p>
+                My experience includes designing RESTful APIs, creating Android and Flutter
+                applications, implementing authentication, business dashboards, reporting tools, 
+                and working with relational databases such as MySQL and PostgreSQL. I enjoy turning 
+                complex problems into clean, scalable, real-world solutions.
+            </p>
+        </div>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+        <div class="section-header">
+            <h2>Skills</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="section-content">
+            <p>Technologies and tools I work with:</p>
+            <ul class="skills-list">
+                <li>Java (Android)</li>
+                <li>Django REST Framework</li>
+                <li>Flutter &amp; Dart</li>
+                <li>Spring Boot</li>
+                <li>PHP &amp; MySQL</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React</li>
+                <li>REST APIs</li>
+                <li>Git &amp; GitHub</li>
+                <li>Firebase Cloud Messaging</li>
+                <li>JWT Authentication</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="project-card">
-        <h3>QueueMed – Hospital Queue Management System</h3>
-        <p>
-            A mobile-based system designed to reduce patient waiting times in
-            public hospitals through digital check-in, appointment booking,
-            and automated queue management.
-        </p>
-        <p><strong>Tech:</strong> Android (Java), PHP, MySQL, Firebase</p>
-        <a href="https://github.com/pfukani/QueueMed" target="_blank">View on GitHub</a>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="section-content">
+            <p>Some of the projects I’ve worked on recently:</p>
 
-</section>
+            <div class="projects-grid">
+                <!-- Matshavatshi Cash Loan System -->
+                <article class="project-card">
+                    <div class="project-chip">FinTech • Full-Stack</div>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: pfukani.mkansi@gmail.com</p>
-    <p>GitHub: github.com/pfukani</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
-</section>
+                    <div class="project-media">
+                        <img
+                            src="images/matshavatshi_dashboard.png"
+                            alt="Matshavatshi Cash Loan System dashboard screenshot"
+                            class="project-image"
+                        >
+                    </div>
+
+                    <h3>Matshavatshi Cash Loan System</h3>
+                    <p>
+                        Full loan-management platform for microlending businesses,
+                        combining a Django REST backend and a Flutter admin app to manage
+                        clients, loans, payments, and financial performance.
+                    </p>
+                    <ul class="project-features">
+                        <li>Client profiles with employment &amp; income records</li>
+                        <li>Auto 40% interest calculation &amp; real-time loan status</li>
+                        <li>Partial/full payments with live balance updates</li>
+                        <li>Dashboards, monthly reports &amp; CSV export</li>
+                        <li>JWT authentication &amp; role-based access (Admin/Staff)</li>
+                    </ul>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> Django REST Framework, Flutter, JWT,
+                        PostgreSQL/MySQL, Charts, CSV
+                    </p>
+                    <a href="https://github.com/your-username/matshavatshi-cash-loan-system"
+                    target="_blank" rel="noopener" class="project-link">
+                        View on GitHub
+                    </a>
+                </article>
+
+                <!-- QueueMed -->
+                <article class="project-card">
+                    <div class="project-chip">HealthTech • Mobile</div>
+
+                    <div class="project-media">
+                        <img
+                            src="images/queuemed_app.png"
+                            alt="QueueMed hospital queue management app screenshot"
+                            class="project-image"
+                        >
+                    </div>
+
+                    <h3>QueueMed – Hospital Queue Management System</h3>
+                    <p>
+                        Mobile-based system designed to reduce patient waiting times in public
+                        hospitals through digital check-in, appointment booking, and automated
+                        queue management.
+                    </p>
+                    <ul class="project-features">
+                        <li>Digital patient check-in &amp; queue tickets</li>
+                        <li>Appointment booking and status tracking</li>
+                        <li>Staff-side view for managing queues</li>
+                        <li>Notifications and basic analytics</li>
+                    </ul>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> Android (Java), PHP, MySQL, Firebase
+                    </p>
+                    <a href="https://github.com/pfukani/QueueMed"
+                    target="_blank" rel="noopener" class="project-link">
+                        View on GitHub
+                    </a>
+                </article>
+
+                <!-- Future Project 1 -->
+                <article class="project-card">
+                    <div class="project-chip">In Progress</div>
+                    <h3>Upcoming Project</h3>
+                    <p>
+                        This slot is reserved for my next project — I’m constantly exploring
+                        new tools and ideas to grow my skills and build useful applications.
+                    </p>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> To be announced
+                    </p>
+                </article>
+
+                <!-- Future Project 2 -->
+                <article class="project-card">
+                    <div class="project-chip">In Progress</div>
+                    <h3>Upcoming Project</h3>
+                    <p>
+                        Another project will appear here soon. Connect with me to see what
+                        I’m experimenting with currently in web, mobile, or backend development.
+                    </p>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> To be announced
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+        <div class="section-header">
+            <h2>Contact</h2>
+            <span class="section-line"></span>
+        </div>
+        <div class="section-content">
+            <p>
+                If you’d like to get in touch about opportunities, collaborations, or just to say hi,
+                you can reach me here:
+            </p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:pfukani.mkansi@gmail.com" class="contact-link">
+                        pfukani.mkansi@gmail.com
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/pfukani" target="_blank" rel="noopener" class="contact-link">
+                        github.com/pfukani
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/pfukani-mathebula-185968b3/" target="_blank" rel="noopener" class="contact-link">
+                        linkedin.com/in/pfukani-mathebula
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>© 2025 Pfukani Mathebula</p>
+    <p>© <span id="year"></span> Pfukani Mathebula • Built with ❤️ and clean code</p>
 </footer>
 
+<script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
-</html> 
+</html>
